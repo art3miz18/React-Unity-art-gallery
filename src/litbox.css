@@ -1,0 +1,10 @@
+.yarl__navigation_prev {
+    display: none;
+}
+.yarl__navigation_next {
+    display: none;
+}
+
+.yarl__root .yarl__container {
+    background-color: rgba(0, 0, 0, .4);
+}

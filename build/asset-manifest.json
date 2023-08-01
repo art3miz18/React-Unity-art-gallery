@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Unity-art-gallery/static/css/main.9645b007.css",
+    "main.js": "/React-Unity-art-gallery/static/js/main.20a54321.js",
+    "index.html": "/React-Unity-art-gallery/index.html",
+    "main.9645b007.css.map": "/React-Unity-art-gallery/static/css/main.9645b007.css.map",
+    "main.20a54321.js.map": "/React-Unity-art-gallery/static/js/main.20a54321.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9645b007.css",
+    "static/js/main.20a54321.js"
+  ]
+}

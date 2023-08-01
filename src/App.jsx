@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import OverlayUI from './GameButtonTest';
 import { Unity, useUnityContext } from "react-unity-webgl";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
@@ -20,6 +21,11 @@ function App() {
   const [header, setHeader] = useState("");
   const [details, setDetails] = useState("");
 
+  const handleClick = () => {
+      // unityInstance.SendMessage('MyGameObject', 'MyFunction', 'MyParameter'); 
+      console.log('Button clicked!')
+  }; 
+
   useEffect(() => {
     window.openModal = (url,header,details) => {      
         setImageUrl(url);
@@ -35,7 +41,14 @@ function App() {
 
   return(
     <>
-      <Unity unityProvider={unityProvider} className=".unity-canvas" style={{ width: '100%', height: '100vh' }} devicePixelRatio={window.devicePixelRatio} />      
+        <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
+          <Unity unityProvider={unityProvider} className=".unity-canvas" style={{ width: '100%', height: '100%' }} devicePixelRatio={window.devicePixelRatio} />                
+          <span className ="Barbot">
+            <OverlayUI />           
+          </span>
+        </div>
+       
+            
       {isModalOpen && (
         <Lightbox
           slides={[

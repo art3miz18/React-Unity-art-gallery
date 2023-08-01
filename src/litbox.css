@@ -8,3 +8,14 @@
 .yarl__root .yarl__container {
     background-color: rgba(0, 0, 0, .4);
 }
+
+.Barbot {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -61px;
+    margin-right: 8px;
+}
+
+.RoundButton{
+    border-radius: 50%;
+}

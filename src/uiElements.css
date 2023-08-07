@@ -1,0 +1,13 @@
+.UIElement .options {
+    display: flex;
+    gap: 10px;
+}
+
+.UIElement .options button {
+    background: #c0c0c0;
+    border: none;
+}
+
+.UIElement .options button.active {
+    border: 1px solid #000;
+}
